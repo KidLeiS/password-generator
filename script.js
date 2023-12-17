@@ -148,7 +148,8 @@ function getPasswordOptions() {
     
   };
   
-  // console.log(passReqs.characters); QA test
+  console.log("The length of the password is " + passReqs.passLen + " characters long");
+  console.log("The pool of potential characters is: " + passReqs.characters);
 }
 
 // Function for getting a random element from an array
@@ -163,7 +164,7 @@ function generatePassword() {
   for (var i = 0; i < passReqs.passLen; i++) {
     password = password + getRandom(passReqs.characters).toString();
   };
-  // console.log(password); QA test
+  console.log("The generated password is: " + password);
   return password;
 }
 
