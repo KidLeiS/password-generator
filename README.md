@@ -26,6 +26,8 @@ Once on the website, please click the button and follow the prompts to generate 
 
 ![An image of the password generator](/Example.png)
 
+You can access the application at the follow [link](https://kidleis.github.io/password-generator/)
+
 ## Roadmap
 No roadmap! This is the final iteration of this relatively simple tool!
 
