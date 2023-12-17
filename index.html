@@ -1,5 +1,8 @@
 <!DOCTYPE html>
+
 <html lang="en-gb">
+
+  <!-- Document title, metadata and stylesheet -->
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,6 +10,8 @@
     <title>Password Generator</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+
+  <!-- Password generator body -->
   <body>
     <div class="wrapper">
       <header>
@@ -16,6 +21,8 @@
         <div class="card-header">
           <h2>Generate a Password</h2>
         </div>
+
+        <!-- Text area that links to doc.QuerySelector and it's value is changed in JS -->
         <div class="card-body">
           <textarea
             readonly
@@ -24,6 +31,8 @@
             aria-label="Generated Password"
           ></textarea>
         </div>
+
+        <!-- Button links to javascript 'click' Event Listener and doc.QuerySelector -->
         <div class="card-footer">
           <button id="generate" class="btn">Generate Password</button>
         </div>

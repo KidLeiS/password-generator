@@ -88,6 +88,7 @@ var upperCasedCharacters = [
   'Z'
 ];
 
+// Password requirements object
 var passReqs = {
   passLen: 0,
   lenVal: false,
@@ -95,6 +96,7 @@ var passReqs = {
   charVal: false,
 };
 
+// Function to reset password requirements
 function resetPassReqs() {
   passReqs.lenVal = false;
   passReqs.charVal = false;
@@ -103,6 +105,7 @@ function resetPassReqs() {
 
 // Function to prompt user for password options
 function getPasswordOptions() {
+  // Prompting for password length (password reqs)
   passReqs.passLen = prompt("Please input the length of your password: ");
   if (passReqs.passLen > 7 && passReqs.passLen < 129 && passReqs.passLen % 1 == 0) {
     passReqs.lenVal = true;
@@ -115,7 +118,7 @@ function getPasswordOptions() {
     };
   };
   
-
+  // Prompting for character types (password reqs)
   while (!passReqs.charVal) {
     var contLower = confirm("Do you want your password to contain lowercase letters?");
     if (contLower) {
@@ -145,7 +148,7 @@ function getPasswordOptions() {
     
   };
   
-  console.log(passReqs.characters);
+  // console.log(passReqs.characters); QA test
 }
 
 // Function for getting a random element from an array
@@ -160,7 +163,7 @@ function generatePassword() {
   for (var i = 0; i < passReqs.passLen; i++) {
     password = password + getRandom(passReqs.characters).toString();
   };
-  console.log(password);
+  // console.log(password); QA test
   return password;
 }
 
@@ -178,7 +181,7 @@ function writePassword() {
 
   resetPassReqs();
 
-  console.log(passReqs);
+  // console.log(passReqs); QA test
 }
 
 // Add event listener to generate button
