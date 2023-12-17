@@ -177,6 +177,8 @@ function writePassword() {
   passwordText.value = password;
 
   resetPassReqs();
+
+  console.log(passReqs);
 }
 
 // Add event listener to generate button
